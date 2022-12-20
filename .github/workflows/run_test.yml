@@ -25,5 +25,6 @@ jobs:
         shell: bash
       - name: Run Tests
         run: |
+          cd build-test
           ./test
         shell: bash
