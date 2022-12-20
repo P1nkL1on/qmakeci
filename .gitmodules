@@ -1,0 +1,7 @@
+[submodule "OpenCV"] 
+   path = 3rdparty/OpenCV/linux/OpenCV/opencv 
+   url = https://github.com/opencv/opencv
+
+[submodule "opencv_contrib"]
+   path = 3rdparty/OpenCV/linux/OpenCV/opencv_contrib
+   url = https://github.com/opencv/opencv_contrib
