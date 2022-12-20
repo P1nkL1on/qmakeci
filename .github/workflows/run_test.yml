@@ -13,6 +13,7 @@ jobs:
           version: '5.15.2'
           host: 'linux'
           target: 'desktop'
+          cache: True
       - name: Build Tests
         run: |
           mkdir build-test
