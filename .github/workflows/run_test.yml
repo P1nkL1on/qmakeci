@@ -13,15 +13,18 @@ jobs:
           version: '5.15.2'
           host: 'linux'
           target: 'desktop'
-      - run: |
-          ls ~/
-        shell: bash
-      - run: |
+          cache: True
+      - name: Build Tests
+        run: |
           mkdir build-test
           cd build-test
           qmake ../test/
           make clean
-          make -j8
+          make -j32
           strip test
+        shell: bash
+      - name: Run Tests
+        run: |
+          cd build-test
           ./test
         shell: bash
