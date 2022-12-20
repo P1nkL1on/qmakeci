@@ -14,6 +14,14 @@ jobs:
           host: 'linux'
           target: 'desktop'
       - run: |
-          ls
-          ls -l
+          ls ~/
+        shell: bash
+      - run: |
+          mkdir build-test
+          cd build-test
+          qmake ../test/
+          make clean
+          make -j8
+          strip test
+          ./test
         shell: bash
