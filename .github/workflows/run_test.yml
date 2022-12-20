@@ -13,3 +13,7 @@ jobs:
           version: '5.15.2'
           host: 'linux'
           target: 'desktop'
+      - run: |
+          ls
+          ls -l
+        shell: bash
