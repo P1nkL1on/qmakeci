@@ -16,12 +16,12 @@ void TestsSimpleMath::compare2and2()
 
 void TestsSimpleMath::testWhichWontCompile()
 {
-    return QString("a") / QString("b");
+    QString("a") + QString("b");
 }
 
 void TestsSimpleMath::newBadTest()
 {
-    QVERIFY(!!0);
+    QVERIFY(!!!0);
 }
 
 QTEST_APPLESS_MAIN(TestsSimpleMath)
